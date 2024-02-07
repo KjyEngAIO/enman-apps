@@ -1,0 +1,40 @@
+<div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+	data-sidebar-position="fixed" data-header-position="fixed">
+	<div
+		class="position-relative overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center">
+		<div class="d-flex align-items-center justify-content-center w-100">
+			<div class="row justify-content-center w-100">
+				<div class="col-md-8 col-lg-6 col-xxl-3">
+					<div class="card">
+						<div class="card-body">
+							<a class="text-nowrap logo-img text-center d-block py-3 w-100">
+								<img src="assets/enman-apps/images/logos/enman.png" width="230" alt="">
+							</a>
+							<form [formGroup]="form" (ngSubmit)="authLogin()">
+								<div class="mb-3">
+									<label class="form-label" style="letter-spacing: 1px;">Username</label>
+									<input class="form-control" style="letter-spacing: 1px;" type="text" placeholder="Enter your username" formControlName="username">
+								</div>
+								<div class="mb-4">
+									<label class="form-label" style="letter-spacing: 1px;">Password</label>
+									<input class="form-control" style="letter-spacing: 1px;" type="password" placeholder="Enter your password" formControlName="password">
+								</div>
+								<button type="submit" class="btn btn-primary w-100 py-8 fs-4 rounded-2 mb-4">Sign In</button>
+							</form>
+							<div class="text-center text-gray-500 text-xs">
+								<span>
+									Already have an Account?
+									<a rel="" title="AIO" class="text-sky hover:text-sky-500 ">Create an account</a></span>
+							</div>
+							<div class="pt-5 text-center text-gray-500 text-xs">
+								<span>
+									Copyright ©2024 By 
+									<a href="https://www.aio.co.id/" rel="" title="AIO" class="text-sky hover:text-sky-500 ">AIO Group</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

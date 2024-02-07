@@ -1,0 +1,29 @@
+.background-change {
+    background-color: #b3d9ec;
+    height: 900px;
+}
+.background-shapes {
+    background-color: #ffffff;
+}
+
+.shadow-color{
+    box-shadow: 3px 4px 5px #a4c2a4;
+    border: 0.5px solid #a4c2a4;
+}
+
+.card-header {
+    background-color: #ffffff;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.card {
+        border-radius: 10px; /* Atur border radius sesuai kebutuhan Anda */
+        border: 1px solid #ccc; /* Atur border sesuai kebutuhan Anda */
+        padding: 5px; /* Atur padding sesuai kebutuhan Anda */
+        margin-bottom: 10px; /* Atur margin bawah sesuai kebutuhan Anda */
+}
