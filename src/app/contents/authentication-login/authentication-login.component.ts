@@ -37,7 +37,6 @@ export class AuthenticationLoginComponent {
   };
   
   ngOnInit(): void {
-    this.isMlMode = (window.localStorage.getItem('ml-mode') == null) ? false : true
     this.form = new FormGroup({
       username: new FormControl('', Validators.required),
       password: new FormControl('', Validators.required)
@@ -51,12 +50,8 @@ export class AuthenticationLoginComponent {
 
     if (this.auth.getToken()) {
       if (this.isLoggedIn = true) {
-        if(this.isMlMode == true){
-          this.router.navigate(["/"])
-        }else{
-          this.router.navigate(["/"])
+          this.router.navigate(["/dashboard"])
         }
-      }
     }
 
     this.authService.login(username, password).subscribe({
@@ -69,11 +64,7 @@ export class AuthenticationLoginComponent {
         this.roles = this.auth.getUser().roles;
         //this.reloadPage();
 
-        if(this.isMlMode == true){
-          this.router.navigate(["/"])
-        }else{
-          this.router.navigate(["/"])
-        }
+        this.router.navigate(["/dashboard"])
 
         Swal.fire(
           'Welcome !',

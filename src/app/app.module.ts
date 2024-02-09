@@ -10,6 +10,7 @@ import { AuthenticationLoginComponent } from './contents/authentication-login/au
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MainDashboardComponent } from './contents/main-dashboard/main-dashboard.component';
+import { AioKejayanComponent } from './contents/industry-plant/aio-kejayan/aio-kejayan.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MainDashboardComponent } from './contents/main-dashboard/main-dashboard
     NavbarComponent,
     SidebarComponent,
     AuthenticationLoginComponent,
-    MainDashboardComponent
+    MainDashboardComponent,
+    AioKejayanComponent,
   ],
   imports: [
     BrowserModule,
