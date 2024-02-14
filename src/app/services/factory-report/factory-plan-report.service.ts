@@ -17,8 +17,6 @@ export class FactoryPlanReportService {
 
   constructor(private http: HttpClient) { }
 
-  // getWaterIndexPlanReport = (month: string) => {
-  //   return this.http.get(this._url + "/report/water-index?month="+ month).pipe(
   getWaterIndexPlanReport = () => {
     return this.http.get(this._url + "/report/water-index").pipe(
       catchError(new httpHandler().errorHttpHandler)
@@ -35,7 +33,7 @@ export class FactoryPlanReportService {
     )
   }
   getBigDowntime = () => {
-    return this.http.get(this._url + "/kpi/getbigdowntime?tahun=2024").pipe(
+    return this.http.get(this._url + "/report/getbigdowntime?tahun=2024").pipe(
       catchError(new httpHandler().errorHttpHandler)
     )
   }  

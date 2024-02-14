@@ -1,6 +1,10 @@
 .background-change {
     background-color: #b3d9ec;
-    height: 900px;
+    border-radius: 10px;
+}
+.background-content {
+    background-color: #cfe8f5;
+    border-radius: 10px;
 }
 .card-header {
     background-color: #ffffff;

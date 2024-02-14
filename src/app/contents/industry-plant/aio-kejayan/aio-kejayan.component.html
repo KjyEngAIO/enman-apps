@@ -4,67 +4,63 @@
 			<div class="row">
 				<div class="col">
 					<div class="card">
-						<div class="card-header" style="letter-spacing: 1px; border-radius: 5px; text-align: start;">
+						<div class="card-header" style="letter-spacing: 1px; border-radius: 5px; text-align: start; font-size: larger;">
 							ENERGY MANAGEMENT AND UTILIZATION DASHBOARD YTD
 						</div>
-						<div>
-							<div class="mb-3 mx-auto background-shapes shadow-color rounded-xl">
+						<div class="row">
+							<div class="col">
 								<header class="px-3 py-4">
 									<div class="d-flex align-items-center">
 										<img src="assets/enman-apps/plan-report/botol-pocari.png" width="37"
 											style="margin-left: 5px; display: inline-block; vertical-align: middle;">
 										<h2 class="font-bold text-sm"
 											style="display: inline-block; vertical-align: middle; margin-left: 15px;">
-											<span style="color: #000000; font-size: medium;">Production output <br> (filled bottle)</span><br>
+											<span style="color: #000000; font-size: large;">Production output <br> (filled bottle)</span><br>
 											<span style="color: black; font-size: larger;">{{this.production_output_oc_ytd}}
 												mio</span><br>
 											<div style="display: flex; align-items: center;" class="mb-2 mt-2">
 												<img
 													src="assets/enman-apps/plan-report/{{ this.percent_filled_bottle >= 0 ? 'panah-atas.png' : 'panah-bawah.png' }}"
 													width="11">
-												<h2 class="ml-1" style="font-size: medium;">{{ this.percent_filled_bottle }}% from Last Year
+												<h2 class="ml-1" style="font-size: large;">{{ this.percent_filled_bottle }}% from Last Year
 												</h2>
 											</div>
 										</h2>
 									</div>
-								</header>
-							</div>
-							<div class="mx-auto background-shapes shadow-color rounded-xl" style="flex: 1;">
-								<header class="px-3 py-4">
 									<div class="d-flex align-items-center">
 										<img src="assets/enman-apps/plan-report/soyjoy.png" width="55"
 											style="display: inline-block; vertical-align: middle;">
 										<h2 class="font-bold text-sm"
 											style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-											<span style="color: #000000; font-size: medium;">Production output <br> (pillow bar)</span><br>
+											<span style="color: #000000; font-size: large;">Production output <br> (pillow bar)</span><br>
 											<span style="color: black; font-size: larger;">{{this.production_output_fsb_ytd}}
 												mio</span><br>
 											<div style="display: flex; align-items: center;" class="mb-2 mt-2">
 												<img
 													src="assets/enman-apps/plan-report/{{ this.percent_pillow_bar >= 0 ? 'panah-atas.png' : 'panah-bawah.png' }}"
 													width="11">
-												<h2 class="ml-1" style="font-size: medium;">{{ this.percent_pillow_bar }}% from Last Year</h2>
+												<h2 class="ml-1" style="font-size: large;">{{ this.percent_pillow_bar }}% from Last Year</h2>
 											</div>
 										</h2>
 									</div>
 								</header>
 							</div>
-							<div class="row w-1/4 pr-2">
-								<div class="mb-6 mx-auto background-shapes shadow-color rounded-xl">
+							<div class="col">
+								<div class="mb-6 mx-auto shadow-color rounded-xl">
 									<header class="px-5 py-4 border-sky-100">
 										<div class="d-flex align-items-center">
 											<img src="assets/enman-apps/plan-report/water.png" width="33"
 												style="margin-left: 5px; display: inline-block; vertical-align: middle;">
 											<h2 class="font-bold text-sm"
 												style="display: inline-block; vertical-align: middle; margin-left: 20px;">
-												<span style="color: #71acca;">WATER </span>
-												<span style="color: black;">INDEX</span>
-												<h2 class="text-xs">L / Bottle eqv 350ml</h2>
+												<span style="color: #71acca; font-size: large;">WATER </span>
+												<span style="color: black; font-size: large;">INDEX</span>
+												<h2 style="font-size: large;">L / Bottle eqv 350ml</h2>
 												<div style="display: flex; align-items: center;">
 													<img
 														src="assets/enman-apps/plan-report/{{ this.percentase_water >= 0 ? 'panah-atas.png' : 'panah-bawah.png' }}"
 														width="11">
-													<h2 class="ml-1 text-xs font-bold">{{ this.percentase_water }}% from Last Year</h2>
+													<h2 class="ml-1 font-bold" style="font-size: large;">{{ this.percentase_water }}% from Last Year</h2>
 												</div>
 											</h2>
 										</div>
@@ -74,22 +70,22 @@
 									</div>
 								</div>
 							</div>
-							<div class="row w-1/4 pr-2">
-								<div class="mb-6 mx-auto background-shapes shadow-color rounded-xl">
+							<div class="col">
+								<div class="mb-6 mx-auto shadow-color rounded-xl">
 									<header class="px-5 py-4 border-sky-100">
 										<div class="d-flex align-items-center">
 											<img src="assets/enman-apps/plan-report/electricity.png" width="30"
 												style="display: inline-block; vertical-align: middle;">
 											<h2 class="font-bold text-sm"
 												style="display: inline-block; vertical-align: middle; margin-left: 15px;">
-												<span style="color: #b182be;">ELECTRICITY </span>
-												<span style="color: black;">INDEX</span>
-												<h2 class="text-xs">KWH / Bottle eqv 350ml</h2>
+												<span style="color: #b182be; font-size: large;">ELECTRICITY </span>
+												<span style="color: black; font-size: large;">INDEX</span>
+												<h2 style="font-size: large;">KWH / Bottle eqv 350ml</h2>
 												<div style="display: flex; align-items: center;">
 													<img
 														src="assets/enman-apps/plan-report/{{ this.percentase_electricity >= 0 ? 'panah-atas.png' : 'panah-bawah.png' }}"
 														width="11">
-													<h2 class="ml-1 text-xs font-bold">{{ this.percentase_electricity }}% from Last Year</h2>
+													<h2 class="ml-1 font-bold" style="font-size: large;">{{ this.percentase_electricity }}% from Last Year</h2>
 												</div>
 											</h2>
 										</div>
@@ -99,28 +95,116 @@
 									</div>
 								</div>
 							</div>
-							<div class="row w-1/4 pr-2">
-								<div class="mb-6 mx-auto background-shapes shadow-color rounded-xl">
+							<div class="col">
+								<div class="mb-6 mx-auto shadow-color rounded-xl">
 									<header class="px-5 py-4 border-sky-100">
 										<div class="d-flex align-items-center">
 											<img src="assets/enman-apps/plan-report/steam.png" width="32"
 												style="margin-left: 10px; display: inline-block; vertical-align: middle;">
 											<h2 class="font-bold text-sm"
 												style="display: inline-block; vertical-align: middle; margin-left: 20px;">
-												<span style="color: #3AA6B9;">STEAM </span>
-												<span style="color: black;">INDEX</span>
-												<h2 class="text-xs">NM3 / Ton Steam</h2>
+												<span style="color: #3AA6B9; font-size: large;">STEAM </span>
+												<span style="color: black; font-size: large;">INDEX</span>
+												<h2 style="font-size: large;">NM3 / Ton Steam</h2>
 												<div style="display: flex; align-items: center;">
 													<img
 														src="assets/enman-apps/plan-report/{{ this.percentase_steam >= 0 ? 'panah-atas.png' : 'panah-bawah.png' }}"
 														width="11">
-													<h2 class="ml-1 text-xs font-bold">{{ this.percentase_steam }}% from Last Year</h2>
+													<h2 class="ml-1 font-bold" style="font-size: large;">{{ this.percentase_steam }}% from Last Year</h2>
 												</div>
 											</h2>
 										</div>
 									</header>
 									<div class="p-3">
 										<canvas id="steam_index" height="175%"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<header class="px-5 py-4 border-sky-100">
+									<div style="display: flex; align-items: center; margin-top: 2px;">
+										<img src="assets/enman-apps/plan-report/shape.png" width="33"
+											style="margin-left: 5px; display: inline-block; vertical-align: middle;">
+										<h2 class="font-bold" style="display: inline-block; vertical-align: middle; margin-left: 20px; font-size: large;">
+											<h2 class="font-bold text-black" style="font-size: large;">Big Downtime Utility (minutes)</h2>
+										</h2>
+									</div>
+								</header>
+								<div class="p-3">
+									<canvas id="big_downtime" height="185%"></canvas>
+								</div>
+							</div>
+							<div class="col">
+								<div class="mb-6 mx-auto shadow-color rounded-xl">
+									<header class="px-5 py-4 border-sky-100">
+										<div style="display: flex; align-items: center;">
+											<img src="assets/enman-apps/plan-report/energy.png" width="32"
+												style="margin-left: 10px; display: inline-block; vertical-align: middle;">
+											<h2 class="font-bold text-sm" style="display: inline-block; vertical-align: middle; margin-left: 20px;">
+												<span style="color: #FF8787; font-size: large;">ENERGY </span>
+												<span style="color: black; font-size: large;">INDEX</span>
+												<h2 style="font-size: large;">GJ / KL</h2>
+												<div style="display: flex; align-items: center;">
+													<img
+														src="assets/enman-apps/plan-report/{{ this.percentase_energy >= 0 ? 'panah-atas.png' : 'panah-bawah.png' }}"
+														width="11">
+													<h2 class="ml-1 font-bold" style="font-size: large;">{{ this.percentase_energy }}% from Last Year</h2>
+												</div>
+											</h2>
+										</div>
+									</header>
+									<div class="p-3">
+										<canvas id="energy_index" height="175%"></canvas>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="mb-6 mx-auto shadow-color rounded-xl">
+									<header class="px-5 py-4 border-sky-100">
+										<div style="display: flex; align-items: center;">
+											<img src="assets/enman-apps/plan-report/rupiah.png" width="36	"
+												style="display: inline-block; vertical-align: middle;">
+											<h2 class="font-bold text-sm" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
+												<span style="color: #e29d69; font-size: large;">OC ENERGY </span>
+												<span style="color: black; font-size: large;">COST</span>
+												<h2 style="font-size: large;">IDR / Bottle</h2>
+												<div style="display: flex; align-items: center;">
+													<img
+														src="assets/enman-apps/plan-report/{{ this.percentase_oc_energy >= 0 ? 'panah-atas.png' : 'panah-bawah.png' }}"
+														width="11">
+													<h2 class="ml-1 font-bold" style="font-size: large;">{{ this.percentase_oc_energy }}% from Last Year</h2>
+												</div>
+											</h2>
+										</div>
+									</header>
+									<div class="p-3">
+										<canvas id="oc_energy_cost" height="175%"></canvas>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="mb-6 mx-auto shadow-color rounded-xl">
+									<header class="px-5 py-4 border-sky-100">
+										<div style="display: flex; align-items: center;">
+											<img src="assets/enman-apps/plan-report/rupiah.png" width="36"
+												style="display: inline-block; vertical-align: middle;">
+											<h2 class="font-bold text-sm" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
+												<span style="color: #b5bb83; font-size: large;">FSB ENERGY </span>
+												<span style="color: black; font-size: large;">COST</span>
+												<h2 style="font-size: large;">IDR / Bar</h2>
+												<div style="display: flex; align-items: center;">
+													<img
+														src="assets/enman-apps/plan-report/{{ this.percentase_fsb_energy >= 0 ? 'panah-atas.png' : 'panah-bawah.png' }}"
+														width="11">
+													<h2 class="ml-1 font-bold" style="font-size: large;">{{ this.percentase_fsb_energy }}% from Last Year</h2>
+												</div>
+											</h2>
+										</div>
+									</header>
+									<div class="p-3">
+										<canvas id="fsb_energy_cost" height="175%"></canvas>
 									</div>
 								</div>
 							</div>
