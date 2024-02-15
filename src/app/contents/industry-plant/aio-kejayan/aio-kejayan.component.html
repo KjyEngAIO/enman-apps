@@ -15,14 +15,14 @@
 											style="margin-left: 5px; display: inline-block; vertical-align: middle;">
 										<h2 class="font-bold text-sm"
 											style="display: inline-block; vertical-align: middle; margin-left: 15px;">
-											<span style="color: #000000; font-size: large;">Production output <br> (filled bottle)</span><br>
-											<span style="color: black; font-size: larger;">{{this.production_output_oc_ytd}}
+											<span style="color: #000000; font-size: medium;">Production output <br> (filled bottle)</span><br>
+											<span style="color: black; font-size: large;">{{this.production_output_oc_ytd}}
 												mio</span><br>
 											<div style="display: flex; align-items: center;" class="mb-2 mt-2">
 												<img
 													src="assets/enman-apps/plan-report/{{ this.percent_filled_bottle >= 0 ? 'panah-atas.png' : 'panah-bawah.png' }}"
 													width="11">
-												<h2 class="ml-1" style="font-size: large;">{{ this.percent_filled_bottle }}% from Last Year
+												<h2 class="ml-1" style="font-size: medium;">{{ this.percent_filled_bottle }}% from Last Year
 												</h2>
 											</div>
 										</h2>
@@ -123,7 +123,7 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<header class="px-5 py-4 border-sky-100">
+								<header class="px-3 py-4">
 									<div style="display: flex; align-items: center; margin-top: 2px;">
 										<img src="assets/enman-apps/plan-report/shape.png" width="33"
 											style="margin-left: 5px; display: inline-block; vertical-align: middle;">
@@ -133,7 +133,7 @@
 									</div>
 								</header>
 								<div class="p-3">
-									<canvas id="big_downtime" height="185%"></canvas>
+									<canvas id="big_downtime" height="100%" width="50%"></canvas>
 								</div>
 							</div>
 							<div class="col">
